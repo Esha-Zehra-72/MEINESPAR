@@ -1,0 +1,29 @@
+.navbar-toggler-icon {
+  background-image: none;
+}
+
+.navbar-toggler.open {
+  position: relative;
+}
+
+.navbar-toggler.open::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 4px;
+  background-color: #000;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navbar-toggler.open::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 4px;
+  background-color: #000;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

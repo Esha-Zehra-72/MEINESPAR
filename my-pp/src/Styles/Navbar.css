@@ -1,68 +1,25 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .navbar {
-    background-color: #333; /* Dark background color */
-    padding: 15px;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .brand {
-    color: white; /* White text */
-    text-decoration: none;
-    font-size: 24px;
-  }
-  
-  .toggle-button {
-    background: none;
-    border: none;
-    color: white; /* White text for the toggle button */
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* Initially hide the toggle button */
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 50px;
-  }
-  
-  .nav-links a {
-    color: white; /* White text for the links */
-    text-decoration: none;
-  }
-  
-  .nav-links.open {
-    display: block; /* Display links when open on mobile */
-  }
-  
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none; /* Hide links on mobile by default */
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      gap: 50px;
-      background-color: #333; /* Dark background for mobile */
-      padding: 15px;
-    }
-  
-    .toggle-button {
-      display: block; /* Show the toggle button on small screens */
-    }
-  }
-  
+.nav-logo{
+  width: 12rem;
+  margin-right: 20px;
+}
+.navbar-brand{
+  padding: 0px !important;
+}
+.nav-bg{
+  background-color: var(--primary-color);
+}
+.nav-text{
+  color: var(--secondary-color) !important;
+  font-weight: 500 !important;
+}
+.navbar .dropdown-toggle{
+  color: var(--secondary-color) !important;
+}
+.form-control {
+  border-radius: 5rem !important;
+}
+.form-control:focus{
+  border: 2px dashed var(--primary-color);
+  box-shadow: none !important;
+  outline: 0;
+}

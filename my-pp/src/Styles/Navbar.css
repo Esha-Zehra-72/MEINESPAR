@@ -1,29 +1,68 @@
-.navbar-toggler-icon {
-  background-image: none;
-}
-
-.navbar-toggler.open {
-  position: relative;
-}
-
-.navbar-toggler.open::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 25px;
-  height: 4px;
-  background-color: #000;
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.navbar-toggler.open::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 25px;
-  height: 4px;
-  background-color: #000;
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #333; /* Dark background color */
+    padding: 15px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    color: white; /* White text */
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .toggle-button {
+    background: none;
+    border: none;
+    color: white; /* White text for the toggle button */
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Initially hide the toggle button */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .nav-links a {
+    color: white; /* White text for the links */
+    text-decoration: none;
+  }
+  
+  .nav-links.open {
+    display: block; /* Display links when open on mobile */
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide links on mobile by default */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      gap: 50px;
+      background-color: #333; /* Dark background for mobile */
+      padding: 15px;
+    }
+  
+    .toggle-button {
+      display: block; /* Show the toggle button on small screens */
+    }
+  }
+  

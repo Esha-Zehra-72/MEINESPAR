@@ -2,7 +2,7 @@ import React from 'react'
 
 const AssessoriesCopen = () => {
   return (
-    <div>AssessoriesCopen</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis obcaecati architecto natus sed eaque id pariatur sapiente modi laboriosam labore molestias vitae minima porro at voluptatibus deserunt eveniet dignissimos tempore ipsum ipsam aperiam. Veritatis eos fugit ducimus at molestias, similique repellendus, dolorem nulla id eveniet dicta itaque dolore omnis esse quam nobis rerum. Numquam officiis aliquam, illo dolore laudantium, ipsa voluptatem suscipit labore ipsam amet deleniti quia fugiat doloribus commodi eius veniam accusamus neque aliquid, ex similique ducimus. Nihil maiores commodi reprehenderit natus quas dolorum dolorem fugit magnam laboriosam voluptatem ratione aperiam veniam, sit animi optio libero? At corporis reiciendis aspernatur in minus dicta enim. Labore facilis velit nostrum est consequuntur fugiat, modi natus voluptatibus iure obcaecati molestiae nesciunt, dignissimos magnam a error hic tempore? Consectetur, consequuntur pariatur! Exercitationem minus officia doloremque nihil enim deleniti quo nobis nostrum optio, magni in hic vel veniam sequi et debitis necessitatibus dolore animi ex! Vero repellat repellendus laborum quae facilis itaque magni, quaerat dolorem animi doloremque odio sit repudiandae fugit possimus dicta quis sint asperiores provident fuga commodi temporibus quam rem deleniti aliquid. Quibusdam reiciendis amet magni? Cum rem error et? Omnis, reiciendis? Deserunt ullam quis aut fugiat in molestiae? Ab, fugiat!</div>
   )
 }
 

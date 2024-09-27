@@ -1,12 +1,19 @@
 import React from "react";
 import AssessoriesCopen from "./Components/AssessoriesCopen/AssessoriesCopen";
-
-const Routes = () => {
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import GroupButtons from "../src/Components/GroupButtons/GroupButtons"
+import HomePage from "./Pages/HomePage";
+const AppRoutes = () => {
   return (
     <>
-      <AssessoriesCopen />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/assessories" element={<AssessoriesCopen />} />
+      </Routes>
+      </BrowserRouter>
     </>
   );
 };
 
-export default Routes;
+export default AppRoutes;

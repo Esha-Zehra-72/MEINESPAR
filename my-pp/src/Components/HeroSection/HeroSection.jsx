@@ -56,7 +56,7 @@ const HeroSection = () => {
                 backgroundImage: `url(${currentSlide.bgImage})`,
               }}
             >
-              <a href="" className="carousel-img">
+              <a href="/" className="carousel-img">
                 <img src={currentSlide.bgImage} alt="carousel" />
               </a>
             </div>

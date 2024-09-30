@@ -1,0 +1,70 @@
+.copen-btn {
+    position: relative;
+    border-radius: 30px;
+    border: 2px solid var(--btn-primary-color);
+    width: 80%;
+    margin: auto;
+    background-color: transparent;
+    font-size: 16px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0;
+  }
+  .copen-btn-inner-text {
+    position: absolute;
+    right: 10px;
+    text-align: end;
+    z-index: 1;
+    transition: right 0.3s ease;
+    line-height: 40px;
+  }
+  .copen-btn-wraper {
+    background-color: var(--btn-primary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    transform-origin: right;
+    font-size: 16px;
+    clip-path: polygon(0 0, 85% 0, 85% 100%, 0% 100%);
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow:inset -10px 3px var(--btn-primary-color);
+  }
+  .fold-copen{
+    position: absolute;
+    background-color: var(--primary-color);
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 43px;
+    border-radius: 30px;
+    transition: all .3s ease;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+  }
+  /* Hover effect */
+  
+  
+  /* .copen-btn:hover .fold-copen {
+    right: 15px;
+    width: 60px;
+    z-index: 999;
+  } */
+  .copen-btn:hover{
+    transition: all .3s ease;
+    border: 2px solid var(--primary-color);
+    box-shadow: 2px 2px 10px rgb(212, 212, 212);
+  }
+  .copen-btn:hover .copen-btn-wraper .fold-copen{
+    transform: translate(-25px);
+  }
+  .copen-btn:hover .copen-btn-wraper{
+    clip-path: polygon(0 0, 65% 0, 65% 100%, 0% 100%);
+  }
+  .copen-btn:hover .fold-copen{
+    width: 77px;
+    transition: all .3s ease;
+  }

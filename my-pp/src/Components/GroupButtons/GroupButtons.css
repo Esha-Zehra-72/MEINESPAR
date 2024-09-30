@@ -1,54 +1,17 @@
-/* .group-button {
-}
-.btn-group,
-.btn-group-vertical {
-  width: 80%;
-}
-.btn-group button:first-child {
-  border-radius: 20px;
-}
-.btn-group button:last-child {
-  border-radius: 20px;
-}
-.btn-group button {
-  background-color: var(--secondary-color);
-  color: rgb(87, 87, 87);
-  font-weight: 600;
-  border-top: none;
-  border-bottom: none;
-  border: none 1px none 1px rgb(226, 11, 11);
-}
-.btn-group button:hover{
-    background-color: white;
-    color: var(--btn-primary-color);
-    border-bottom: 2px solid  var(--btn-primary-color);
-}
-.btn-group button:first-child:hover{
-    border: none none 2px 2px solid var(--btn-primary-color);
-    
-} */
 
-
-/* GroupButtons.css */
-
-/* GroupButtons.css */
-
-/* Button Active State */
 .button-active {
-  background-color: var(--btn-primary-color); /* Active color */
-  color: white; /* Change text color if necessary */
-}
+  background-color: var(--btn-primary-color);
+  color: white; }
 
 /* Button Inactive State */
 .button-inactive {
-  background-color: white; /* Inactive buttons will be white */
-  color: rgb(100, 100, 100); /* Text color for inactive buttons */
-  border: 1px solid rgb(219, 217, 217); /* Optional: border to match active color */
+  background-color: white; 
+  color: rgb(100, 100, 100); 
+  border: 1px solid rgb(219, 217, 217);
 }
 
 /* Button Clicked State for Yellow Border */
 .button-clicked {
-  /* border: none none 2px 2px solid yellow; Yellow border when button is clicked */
   border: none;
 }
 
@@ -71,13 +34,8 @@
   padding: 10px 20px; /* Consistent padding */
   line-height: 1.5; /* Fixes content height */
   box-shadow: 0px 2px rgb(206, 205, 205);
-  /* transition: background-color 0.3s, color 0.3s, border 0.3s; Smooth transition */
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
-
-/* Hover Effect */
-/* .btn-group button:hover {
-  background-color: transparent; 
-} */
 
 /* Fix Button Size Consistency */
 .btn-group button {
@@ -109,6 +67,14 @@ button:focus {
   background-color: white;
   color: rgb(100, 100, 100);
   border: none;
-  transform: scale(1);
+  border: 1px solid rgb(209, 208, 208);
+}
+.button-inactive:hover{
+  background-color: var(--secondary-color);
+  color: rgb(100, 100, 100);
+}
+.button-active:hover{
+  background-color: var(--btn-primary-color);
+  color: var(--secondary-color);
   border: 1px solid rgb(209, 208, 208);
 }

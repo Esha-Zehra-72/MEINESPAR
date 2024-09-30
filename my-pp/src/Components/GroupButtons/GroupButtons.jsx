@@ -9,44 +9,44 @@ import "./GroupButtons.css";
 
 const GroupButtons = ({ activeCategory, onShowCategory }) => {
   return (
-    <div className="container mt-5 text-center mb-5 pb-5">
+    <div className="container mt-5 text-center mb-5">
       <h2 className="mb-4 buttons-heading">Aktionscodes und Rabatte der Woche!</h2>
       <ButtonGroup aria-label="Basic example group-button" className="btn-group">
-        <Button
+        <button
           onClick={() => onShowCategory('accessories')}
           className={`btn ${activeCategory === 'accessories' ? 'button-active' : 'button-inactive'} ${activeCategory === 'accessories' ? 'button-clicked' : ''}`}
         >
           <PiAngularLogoFill className="me-2 svg-icon" />
           Accessories
-        </Button>
-        <Button
+        </button>
+        <button
           onClick={() => onShowCategory('babies')}
           className={`btn ${activeCategory === 'babies' ? 'button-active' : 'button-inactive'} ${activeCategory === 'babies' ? 'button-clicked' : ''}`}
         >
           <FaChild className="me-2 svg-icon" />
           Babies
-        </Button>
-        <Button
+        </button>
+        <button
           onClick={() => onShowCategory('bike')}
           className={`btn ${activeCategory === 'bike' ? 'button-active' : 'button-inactive'} ${activeCategory === 'bike' ? 'button-clicked' : ''}`}
         >
           <MdOutlinePedalBike className="me-2 svg-icon" />
           Bike
-        </Button>
-        <Button
+        </button>
+        <button
           onClick={() => onShowCategory('electronics')}
           className={`btn ${activeCategory === 'electronics' ? 'button-active' : 'button-inactive'} ${activeCategory === 'electronics' ? 'button-clicked' : ''}`}
         >
           <MdAnchor className="me-2 svg-icon" />
           Electronics
-        </Button>
-        <Button
+        </button>
+        <button
           onClick={() => onShowCategory('healthCare')}
           className={`btn ${activeCategory === 'healthCare' ? 'button-active' : 'button-inactive'} ${activeCategory === 'healthCare' ? 'button-clicked' : ''}`}
         >
           <FaHeartbeat className="me-2 svg-icon" />
           Health Care
-        </Button>
+        </button>
       </ButtonGroup>
     </div>
   );

@@ -1,9 +1,84 @@
-import React from 'react'
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { PiAngularLogoFill } from "react-icons/pi";
+import img1 from "../../Assets/img1.png"
+import { Link } from "react-router-dom";
+import "./AssessoriesCopen.css"; // Import your CSS file
 
 const AssessoriesCopen = () => {
-  return (
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, reiciendis obcaecati architecto natus sed eaque id pariatur sapiente modi laboriosam labore molestias vitae minima porro at voluptatibus deserunt eveniet dignissimos tempore ipsum ipsam aperiam. Veritatis eos fugit ducimus at molestias, similique repellendus, dolorem nulla id eveniet dicta itaque dolore omnis esse quam nobis rerum. Numquam officiis aliquam, illo dolore laudantium, ipsa voluptatem suscipit labore ipsam amet deleniti quia fugiat doloribus commodi eius veniam accusamus neque aliquid, ex similique ducimus. Nihil maiores commodi reprehenderit natus quas dolorum dolorem fugit magnam laboriosam voluptatem ratione aperiam veniam, sit animi optio libero? At corporis reiciendis aspernatur in minus dicta enim. Labore facilis velit nostrum est consequuntur fugiat, modi natus voluptatibus iure obcaecati molestiae nesciunt, dignissimos magnam a error hic tempore? Consectetur, consequuntur pariatur! Exercitationem minus officia doloremque nihil enim deleniti quo nobis nostrum optio, magni in hic vel veniam sequi et debitis necessitatibus dolore animi ex! Vero repellat repellendus laborum quae facilis itaque magni, quaerat dolorem animi doloremque odio sit repudiandae fugit possimus dicta quis sint asperiores provident fuga commodi temporibus quam rem deleniti aliquid. Quibusdam reiciendis amet magni? Cum rem error et? Omnis, reiciendis? Deserunt ullam quis aut fugiat in molestiae? Ab, fugiat!</div>
-  )
-}
+  const [showMore, setShowMore] = useState({}); // State to handle showMore for each card
 
-export default AssessoriesCopen
+  const toggleShowMore = (id) => {
+    setShowMore(prevState => ({
+      ...prevState,
+      [id]: !prevState[id] // Toggle the specific card
+    }));
+  };
+
+  // Array of card data
+  const cardData = [
+    {
+      id: 1,
+      title: 'Card Title 1',
+      discount: '15%',
+      content: 'Some quick example text to build on the card title.',
+      moreContent: 'Here’s some more content for Card 1!',
+      imgSrc: img1
+    },
+    {
+      id: 2,
+      title: 'Card Title 2',
+      discount: '20%',
+      content: 'Some quick example text to build on the card title.',
+      moreContent: 'Here’s some more content for Card 2!',
+      imgSrc: img1
+    },
+    {
+      id: 3,
+      title: 'Card Title 3',
+      discount: '25%',
+      content: 'Some quick example text to build on the card title.',
+      moreContent: 'Here’s some more content for Card 3!',
+      imgSrc: img1
+    },
+  ];
+
+  return (
+    <div className="container mt-4">
+      <div className="row">
+        {cardData.map((card) => (
+          <div className="col-lg-4 col-md-6 mb-4" key={card.id}>
+            <Card style={{ width: '100%' }}>
+              <Card.Body>
+                <Card.Title className='text-center d-flex justify-content-center align-items-center'>
+                  <PiAngularLogoFill className="me-2" />
+                  {card.title}
+                </Card.Title>
+                <div className="text-center">
+                  <Card.Img src={card.imgSrc} className='img-fluid' />
+                </div>
+                <h4 className='text-center my-2'>{card.discount}</h4>
+
+                <Card.Text className='text-center'>
+                  {card.content}
+                  <div className={`more-content ${showMore[card.id] ? 'show' : ''}`}>
+                    {card.moreContent}
+                  </div>
+                </Card.Text>
+
+                <Link to="#" className='d-block text-center mb-3' onClick={() => toggleShowMore(card.id)}>
+                  {showMore[card.id] ? "Show Less" : "Read More"}
+                </Link>
+
+                <Button variant="primary" className='d-block text-center mb-3'>Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default AssessoriesCopen;

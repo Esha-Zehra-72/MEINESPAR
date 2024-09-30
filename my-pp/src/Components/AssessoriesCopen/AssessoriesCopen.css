@@ -1,0 +1,30 @@
+/* Hide content initially and allow transition */
+.more-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* When the content is shown */
+.more-content.show {
+  max-height: 100px; /* Adjust based on your content size */
+  opacity: 1;
+}
+
+button {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.card-img{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin: 10px auto;
+}
+.card-img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}

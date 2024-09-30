@@ -1,17 +1,22 @@
 import React from "react";
 import AssessoriesCopen from "./Components/AssessoriesCopen/AssessoriesCopen";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import GroupButtons from "../src/Components/GroupButtons/GroupButtons"
+import {Route, Routes } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
+import BabiesCopen from "./Components/BabiesCopen/BabiesCopen";
+import ElectronicsCopen from "./Components/ElectronicsCopen/ElectronicsCopen";
+import HealthCareCopen from "./Components/HealthCareCopen/HealthCareCopen";
+import BikeCopne from "./Components/BikeCopen/BikeCopne";
 const AppRoutes = () => {
   return (
     <>
-      <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/assessories" element={<AssessoriesCopen />} />
+        <Route path="/babiescopen" element={<BabiesCopen/>} />
+        <Route path="/bikecopen" element={<BikeCopne/>} />
+        <Route path="/electronicscopen" element={<ElectronicsCopen/>} />
+        <Route path="/healthcarecopen" element={<HealthCareCopen/>} />
       </Routes>
-      </BrowserRouter>
     </>
   );
 };

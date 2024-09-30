@@ -29,68 +29,86 @@
 } */
 
 
+/* GroupButtons.css */
+
+/* GroupButtons.css */
+
+/* Button Active State */
+.button-active {
+  background-color: var(--btn-primary-color); /* Active color */
+  color: white; /* Change text color if necessary */
+}
+
+/* Button Inactive State */
+.button-inactive {
+  background-color: white; /* Inactive buttons will be white */
+  color: rgb(100, 100, 100); /* Text color for inactive buttons */
+  border: 1px solid rgb(219, 217, 217); /* Optional: border to match active color */
+}
+
+/* Button Clicked State for Yellow Border */
+.button-clicked {
+  /* border: none none 2px 2px solid yellow; Yellow border when button is clicked */
+  border: none;
+}
+
 /* General Button Group Styling */
 .btn-group, .btn-group-vertical {
-    width: 80%;
-  }
-  
-  /* First and Last Buttons: Rounded Borders */
-  .btn-group button:first-child {
-    border-radius: 20px 0 0 20px; /* Rounded on the left */
-  }
-  
-  .btn-group button:last-child {
-    border-radius: 0 20px 20px 0; /* Rounded on the right */
-  }
-  
-  /* Button General Styles */
-  .btn-group button {
-    background-color: var(--secondary-color);
-    color: rgb(87, 87, 87);
-    font-weight: 500;
-    /* border: none 1px none 1px solid rgb(87, 87, 87); Remove all borders except the ones added on hover */
-    border-top: none;
-    border-bottom: none;
-    padding: 10px 20px; /* Consistent padding */
-    line-height: 1.5; /* Fixes content height */
-    box-sizing: border-box; /* Prevents layout shifting */
-    box-shadow: 0px 2px rgb(206, 205, 205);
-    padding: 8px;
-  }
-  
-  /* Hover Effect: Add Bottom Border Only */
-  .btn-group button:hover {
-    background-color: white;
-    color: var(--btn-primary-color);
-    box-shadow:0px 2px var(--btn-primary-color) ;
-  }
-  
-  /* First Button Hover: No Left Border */
-  .btn-group button:first-child:hover {
-    border-left: none; /* Remove left border */
-  }
-  
-  /* Last Button Hover: No Right Border */
-  .btn-group button:last-child:hover {
-    border-right: none; /* Remove right border */
-  }
-  
-  /* Fix Button Size Consistency */
-  .btn-group button {
-    display: inline-block;
-    box-sizing: border-box; /* Keep dimensions consistent with padding and borders */
-    margin: 0; /* No margin to prevent shifting */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .btn-group button svg{
-    margin-right:8px;
-  }
-.btn-group button:hover svg{
-    transform: rotate(360deg); /* Rotate 360 degrees */
-    transition: transform 0.5s ease-in-out; /* Smooth transition for rotation */  
+  width: 80%;
 }
-.buttons-heading{
-    color: var(--primary-color);
+
+/* First and Last Buttons: Rounded Borders */
+.btn-group button:first-child {
+  border-radius: 20px 0 0 20px; /* Rounded on the left */
+}
+
+.btn-group button:last-child {
+  border-radius: 0 20px 20px 0; /* Rounded on the right */
+}
+
+/* Button General Styles */
+.btn-group button {
+  padding: 10px 20px; /* Consistent padding */
+  line-height: 1.5; /* Fixes content height */
+  box-shadow: 0px 2px rgb(206, 205, 205);
+  /* transition: background-color 0.3s, color 0.3s, border 0.3s; Smooth transition */
+}
+
+/* Hover Effect */
+/* .btn-group button:hover {
+  background-color: transparent; 
+} */
+
+/* Fix Button Size Consistency */
+.btn-group button {
+  display: inline-block;
+  box-sizing: border-box; /* Keep dimensions consistent with padding and borders */
+  margin: 0; /* No margin to prevent shifting */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-group button svg {
+  margin-right: 8px;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for rotation */
+}
+
+.button-clicked .svg-icon {
+  transform: rotate(360deg); /* Rotate 360 degrees */
+}
+
+.buttons-heading {
+  color: var(--primary-color);
+}
+
+button:focus {
+  outline: none; /* Remove default focus outline */
+}
+.btn-primary:hover{
+  background-color: white;
+  color: rgb(100, 100, 100);
+  border: none;
+  transform: scale(1);
+  border: 1px solid rgb(209, 208, 208);
 }

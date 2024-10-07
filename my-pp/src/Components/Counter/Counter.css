@@ -1,0 +1,35 @@
+.count1 p {
+  width: 90%;
+  color: var(--btn-secondary-color);
+  font-size: 16px;
+  text-align: center;
+}
+.count-h2 {
+  text-align: center;
+  color: "blue";
+  font-size: 2rem;
+  width: 90%;
+  font-weight: 600;
+}
+.counterUp {
+  font-size: 2rem;
+}
+.count1 h2 {
+  color: var(--primary-color);
+}
+
+.counter-bg {
+  color: var(--primary-color);
+}
+.counter-bg{
+  background-color: var(--secondary-color);
+}
+.count1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.counter-icone{
+  font-size: 40px;
+}

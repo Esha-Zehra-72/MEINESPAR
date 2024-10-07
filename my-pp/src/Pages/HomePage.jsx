@@ -8,6 +8,9 @@ import BabiesCopen from '../Components/BabiesCopen/BabiesCopen'; // Example comp
 import ElectronicsCopen from '../Components/ElectronicsCopen/ElectronicsCopen'; // Example component for Electronics
 import HealthCareCopen from '../Components/HealthCareCopen/HealthCareCopen'; // Example component for Health Care
 import BikeCopne from '../Components/BikeCopen/BikeCopne';
+import Counter from '../Components/Counter/Counter';
+import ScaleImg from '../Components/ScaleImg/ScaleImg';
+import ImageAndText from '../Components/ImageAndText/ImageAndText';
 
 const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -39,6 +42,9 @@ const HomePage = () => {
       <HeroSection />
       <GroupButtons onShowCategory={handleShowCategory} activeCategory={activeCategory}/>
       {renderCategoryComponent()}
+      <Counter/>
+      <ScaleImg/>
+      <ImageAndText/>
     </div>
   );
 };

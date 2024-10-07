@@ -45,18 +45,10 @@
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
   }
-  /* Hover effect */
-  
-  
-  /* .copen-btn:hover .fold-copen {
-    right: 15px;
-    width: 60px;
-    z-index: 999;
-  } */
   .copen-btn:hover{
     transition: all .3s ease;
     border: 2px solid var(--primary-color);
-    box-shadow: 2px 2px 10px rgb(212, 212, 212);
+    box-shadow: 2px 2px 10px rgb(175, 174, 174);
   }
   .copen-btn:hover .copen-btn-wraper .fold-copen{
     transform: translate(-25px);

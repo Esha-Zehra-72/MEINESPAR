@@ -1,0 +1,43 @@
+.scaleImg h2{
+ text-align: center;
+ margin-top: 30px;
+ color: var(--primary-color);
+}
+.img-bg-color{
+    color: white;
+    padding: 10px;
+    width: 87%;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 9;
+    height: 100%;
+    top: -0px;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+.scaleImg img{
+    height: auto ;
+    width: 100%; 
+    height: 100%;
+    border-radius: 10px;
+}
+.scaleImg p{
+    position:absolute;
+    font-weight: 700;
+    letter-spacing: 1px;
+    bottom: 0;
+}
+.img-container:hover{
+    transform: translateY(-25px);
+    /* transform: scale(1.1); */
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.scaleImg .img-bg-color:hover p{
+    transform: scale(1.1);
+    color: var(--btn-primary-color);
+    transition: all .3s ease;
+}
+.scaleImg img:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+}

@@ -1,0 +1,39 @@
+.promise-label{
+    background-color: var(--btn-primary-color);
+    color: var(--secondary-color);
+    font-size: 32px;
+    padding: 10px;
+    font-weight: 600;
+    width: 15%;
+    clip-path:polygon(0 0, 100% 0, 93% 50%, 100% 100%, 0 100%);
+    position: absolute;
+    top: 16%;
+    left: 40%;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.textHeading{
+    color: var(--primary-color);
+    font-weight: 400;
+    /* font-size: 18px; */
+}
+.textPara{
+    color: var(--btn-secondary-color);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+}
+.textLink{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: -10px;
+    text-decoration: none;
+}
+.textLink a{
+    font-size: 18px;
+    /* text-decoration: none; */
+}

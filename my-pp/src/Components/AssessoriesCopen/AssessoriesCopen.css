@@ -29,7 +29,7 @@ button {
   transition: all 0.5s ease-in-out;
 }
 .card {
-  background-color: rgba(247, 247, 247, 0.932);
+  background-color: var(--secondary-color);
   margin: auto;
   box-shadow: 2px 2px 2px rgb(184, 184, 184);
   border: none;

@@ -11,6 +11,7 @@ import BikeCopne from '../Components/BikeCopen/BikeCopne';
 import Counter from '../Components/Counter/Counter';
 import ScaleImg from '../Components/ScaleImg/ScaleImg';
 import ImageAndText from '../Components/ImageAndText/ImageAndText';
+import ColoredImags from '../Components/ImagesColored/ColoredImags';
 
 const HomePage = () => {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -43,8 +44,11 @@ const HomePage = () => {
       <GroupButtons onShowCategory={handleShowCategory} activeCategory={activeCategory}/>
       {renderCategoryComponent()}
       <Counter/>
-      <ScaleImg/>
+      <ScaleImg />
       <ImageAndText/>
+      <div>
+      <ColoredImags/>
+      </div>
     </div>
   );
 };

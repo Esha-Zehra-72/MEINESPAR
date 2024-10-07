@@ -1,0 +1,36 @@
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(7, 10rem);
+    grid-row-gap: 40px;
+    margin-top: 50px;
+    column-gap: 10px;
+}
+.cards{
+    width: 150px;
+    height: 160px;
+    background-color: var(--secondary-color);
+    border: none;
+    transition: all .5s ease;
+}
+.cards:hover{
+    transform: scale(1.1);
+}
+.cards img{
+    height: 150px;
+    width: 150px;
+}
+.cards h6{
+    text-align: left;
+    margin-top: -10px;
+}
+.heading{
+    text-align: center;
+    color: var(--primary-color);
+}
+.bg-color{
+    background-color: var(--bg-color);
+}
+.stores-btn{
+    width: 300px;
+    margin: auto;
+}
